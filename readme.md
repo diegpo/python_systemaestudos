@@ -1,146 +1,102 @@
-# Sistema de Gestão de Condomínios - Projeto Integrador UNIvesp II
+# 🐍 Python Study System
 
-Sistema desenvolvido para o Projeto Integrador II da Universidade Univesp.
-Sistema completo para gestão de condomínios residenciais com painel administrativo moderno e responsivo.
+This project was developed using **Python** and **Django**, with the **exclusive purpose of study and learning**, exploring in practice the main concepts of the language and the framework.
 
-## 🚀 Funcionalidades Principais
+This system serves as an **educational base**, where different features will be implemented incrementally, following good development practices.
 
-    - Login e logout de usuários com autenticação segura (Django Auth);
-    - Dashboard interativo com cards dinâmicos e data/hora atualizadas em tempo real;
-    - Gerenciamento de:
-        Moradores
-        Veículos
-        Pets
-        Funcionários
-    - Submenus expansíveis para melhor organização.
-    - Interface responsiva: desktop, tablet e mobile.
+---
 
-## Pontos em melhoria
+## 🎯 Project Objective
 
-    - Possibilidade de expansão em módulos separados;
-    - Sistema de comunicaçao entre portaria e condôminios;
-    - Sistemas de avisos gerais;
+The main goals of this project are:
 
-## Integração via API REST
+- Consolidate knowledge in **Python**
+- Learn and practice **Django in a hands-on way**
+- Understand how the following work:
+  - Authentication
+  - Databases
+  - Web project structure
+  - Code organization
+- Build a solid foundation for future projects
 
-Foram criadas e projetadas apis para requisiçoes realizadas no banco de dados
+> ⚠️ **This project has no commercial purpose** and should not be used in production.  
+> It exists solely as a **study and experimentation environment**.
 
-```python
-🔗 Endereços das APIs
-    Geral:      http://localhost:8000/api/
-    Moradores:  http://localhost:8000/api/moradores/
-    Pets:       http://localhost:8000/api/pets/
-    Veículos:   http://localhost:8000/api/veiculos/
-```
+---
 
-## 🛠 Tecnologias Utilizadas
+## 🧠 Concepts Covered
 
-Categoria Ferramenta / Tecnologia
-Backend Python, Django 4.x
-Banco de Dados SQLite (padrão Django)
-Frontend HTML5, CSS3, JavaScript
-Framework CSS Personalizado / Flexbox
-Ícones Font Awesome
-Versionamento Git, GitHub
-IDE / Editor VSCode, Windows 11
+### 🐍 Python
+- Project structure
+- Virtual environments
+- Dependency management
+- Organization best practices
 
-## ⚙ Estrutura do Projeto
+### 🌐 Django
+- Project and app creation
+- URL routing system
+- Views and Templates
+- User authentication (login/logout)
+- Route protection
+- Django Admin
+- SQLite database
+- Environment variables
 
-SistemaCondominioPython/
-├── manage.py
-├── app/
-│ ├── migrations/
-│ ├── static/
-│ │ ├── css/
-│ │ └── js/
-│ ├── templates/
-│ │ ├── index.html
-│ │ └── dashboard.html
-│ ├── views.py
-│ └── urls.py
-├── db.sqlite3
-└── README.md
+---
 
-## 💻 Como Executar o Projeto
+## 🗄️ Database
 
-```python
-Clone o repositório:
-git clone https://github.com/diegpo/SistemaCondominioPython.git
+- Database used: **SQLite**
+- Local database to simplify studies and testing
+- Automatically managed by the Django ORM
 
-Acesse a pasta do projeto:
-cd SistemaCondominioPython
+---
 
-Crie e ative o ambiente virtual:
+## 🔐 Current Features
+
+- ✅ Login system
+- ✅ User authentication
+- ✅ Protected dashboard
+- ✅ Django Admin
+- ✅ Secure configuration using `.env`
+- ✅ Base structure ready for expansion
+
+---
+
+## 🚀 Technologies Used
+
+- **Python 3**
+- **Django**
+- **SQLite**
+- **HTML**
+- **Git & GitHub**
+
+---
+
+## 📦 How to Run the Project Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/diegpo/python_systemaestudos.git
+
+# Access the project folder
+cd python_systemaestudos
+
+# Create a virtual environment
 python -m venv venv
+
+# Activate the virtual environment
+# Windows
 venv\Scripts\activate
 
-Instale as dependências:
+# Install dependencies
 pip install -r requirements.txt
 
-Aplique as migrações:
+# Run migrations
 python manage.py migrate
 
-Crie um superusuário:
+# Create a superuser
 python manage.py createsuperuser
 
-Inicie o servidor:
+# Start the development server
 python manage.py runserver
-
-Abra o endereço em um browser
-http://127.0.0.1:8000/
-```
-
-## 🎨 Observações de Design
-
-Dashboard inspirado em sistemas modernos, com submenus animados.
-Data e hora atualizadas dinamicamente.
-Logout seguro via Django.
-Estilo e cores personalizadas para melhor experiência do usuário.
-
-## 🔒 Autenticação
-
-Sistema baseado em Django Auth.
-Dashboard protegido com @login_required.
-Logout seguro via botão no dashboard.
-
-## 📚 Referências
-
-Documentação Django
-Font Awesome
-W3Schools – HTML/CSS/JS
-
-## Tela de login
-
-<p align="center">
-  <img src="https://i.imgur.com/igu99pQ.png" alt="Tela de login" width="400"/>
-</p>
-
-## Alguns Menus
-
-<p align="center">
-  <img src="https://i.imgur.com/aBUhsFV.png" alt="menus" width="400"/>
-</p>
-
-## Cadastro Simples
-
-<p align="center">
-  <img src="https://i.imgur.com/mUItjDi.png" alt="cadastro" width="400"/>
-</p>
-
-## Exemplo de API Rest GET/POST(PETS)
-
-<p align="center">
-  <img src="https://i.imgur.com/EY15pBD.png" alt="api pet" width="400"/>
-</p>
-
-## Exemplo de API Rest GET/POST(MORADORES)
-
-<p align="center">
-  <img src="https://i.imgur.com/2Id5nW8.png" alt="api pet" width="400"/>
-</p>
-
-## Acesso ao banco de dados e tabelas específicas direto pelo Python
-
-<p align="center">
-  <img src="https://i.imgur.com/T1oetoO.png" alt="api pet" width="400"/>
-</p>
